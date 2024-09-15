@@ -1,0 +1,213 @@
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100svh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+/* CSS Reset */
+
+:root {
+  /* Variables */
+  /* Color */
+  --white: #fff;
+  --h1-color: hsl(212, 21%, 14%);
+  --main-color: hsl(228, 12%, 48%);
+  --other-color: hsl(157, 36%, 37%);
+  --body-color: hsl(30, 38%, 92%);
+  --button-hover-color: hsl(158, 42%, 18%);
+  /* Color */
+  /* Font */
+  --ff-fraunces: Fraunces, sans-serif;
+  --ff-montserrat: Montserrat, sans-serif;
+  /* Font */
+  /* Font Size */
+  --fs-12: 0.75rem;
+  --fs-32: 2rem;
+  --fs-14: 0.875rem;
+  --fs-13: 0.813rem;
+  /* Font Size */
+  /* Font Weight */
+  --fw-medium: 500;
+  --fw-bold: 700;
+  /* Font Weight */
+  /* Line Height */
+  --lh-32: 2rem;
+  --lh-23: 1.438rem;
+  /* Line Height */
+  /* Line Spacing */
+  --ls-5: 0.313rem;
+  /* Line Spacing */
+  /* Variables */
+}
+/* Utility Classes */
+/* Color */
+.white {
+  color: var(--white);
+}
+.h1-color {
+  color: var(--h1-color);
+}
+.main-color {
+  color: var(--main-color);
+}
+.price-color {
+  color: var(--other-color);
+}
+.button-color {
+  background-color: var(--other-color);
+}
+.body-color {
+  background-color: var(--body-color);
+}
+/* Color */
+/* Font */
+.fraunces {
+  font-family: var(--ff-fraunces);
+}
+.montserrat {
+  font-family: var(--ff-montserrat);
+}
+/* Font */
+/* Font Size */
+.fs-12 {
+  font-size: var(--fs-12);
+}
+.fs-32 {
+  font-size: var(--fs-32);
+}
+.fs-14 {
+  font-size: var(--fs-14);
+}
+.fs-13 {
+  font-size: var(--fs-13);
+}
+/* Font Size */
+/* Font Weight */
+.medium {
+  font-weight: var(--fw-medium);
+}
+.bold {
+  font-weight: var(--fw-bold);
+}
+/* Font Weight */
+/* Line Height */
+.lh-32 {
+  line-height: var(--lh-32);
+}
+.lh-23 {
+  line-height: var(--lh-23);
+}
+/* Line Height */
+/* Line Spacing */
+.ls-5 {
+  letter-spacing: var(--ls-5);
+}
+/* Line Spacing */
+/* Utility Classes */
+
+/* Styling */
+/* Button */
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 5.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.btn:hover, .btn:focus {
+  background-color: var(--button-hover-color);
+}
+/* Button */
+body {
+  background-color: var(--body-color);
+  padding: 1.75rem 1rem;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h1 {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 0.625rem;
+}
+.card-img img{
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.card-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1.188rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.original-price {
+  text-decoration: line-through;
+}
+/* Styling */
+
+@media  (min-width: 650px) {
+  .card {
+    display: flex;
+    max-width: 600px;
+  }
+  .card-info {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .btn {
+    padding: 1rem 3.875rem;
+  }
+  .card-img img {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+}
