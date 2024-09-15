@@ -1,5 +1,7 @@
 /* CSS Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -14,25 +16,39 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 /* CSS Reset */
@@ -142,13 +158,15 @@ ol[role='list'] {
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
-  padding: 1rem 5.75rem;
+  padding: 1rem 1rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--button-hover-color);
 }
 /* Button */
@@ -162,7 +180,7 @@ main {
   align-items: center;
   min-height: 100vh;
 }
-h1 {
+h2 {
   margin-top: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -170,7 +188,7 @@ h1 {
   background-color: var(--white);
   border-radius: 0.625rem;
 }
-.card-img img{
+.card-img img {
   border-radius: 0.625rem 0.625rem 0 0;
 }
 .card-info {
@@ -186,12 +204,20 @@ h1 {
   margin-top: 1.5rem;
   margin-bottom: 1.25rem;
 }
-.original-price {
-  text-decoration: line-through;
+.chanel {
+  text-transform: uppercase;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 /* Styling */
 
-@media  (min-width: 650px) {
+@media (min-width: 650px) {
   .card {
     display: flex;
     max-width: 600px;
