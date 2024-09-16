@@ -156,7 +156,7 @@ ol[role="list"] {
 /* Button */
 .btn {
   cursor: pointer;
-  border: none;
+  border: transparent;
   border-radius: 0.5rem;
   padding: 1rem 1rem;
   width: 100%;
@@ -187,9 +187,7 @@ h2 {
 .card {
   background-color: var(--white);
   border-radius: 0.625rem;
-}
-.card-img img {
-  border-radius: 0.625rem 0.625rem 0 0;
+  overflow: hidden;
 }
 .card-info {
   padding: 1.5rem;
@@ -217,22 +215,14 @@ h2 {
 }
 /* Styling */
 
-@media (min-width: 650px) {
+@media (min-width: 40.625rem) {
   .card {
     display: flex;
-    max-width: 600px;
+    max-width: 37.5rem;
   }
   .card-info {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
+    max-width: 18.75rem;
     justify-content: center;
     padding: 2rem;
-  }
-  .btn {
-    padding: 1rem 3.875rem;
-  }
-  .card-img img {
-    border-radius: 0.625rem 0 0 0.625rem;
   }
 }
